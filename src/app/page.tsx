@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import FoodCategory from "@/components/food-category/FoodCategory";
 
 export default function Home() {
   return (
-    <div>
-      
+    <div className="container">
+      <FoodCategory />
     </div>
   );
 }

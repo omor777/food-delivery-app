@@ -35,7 +35,7 @@ import {
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 
-const formSchema = z.object({
+const signUpSchema = z.object({
   username: z.string(),
   email: z.string().email(),
   phone: z.string(),
@@ -48,8 +48,8 @@ const formSchema = z.object({
 });
 
 const SignUp = () => {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof signUpSchema>>({
+    resolver: zodResolver(signUpSchema),
     defaultValues: {
       username: "",
       email: "",
@@ -63,7 +63,7 @@ const SignUp = () => {
     },
   });
 
-  const onSubmit = async (formData: z.infer<typeof formSchema>) => {};
+  const onSubmit = async (formData: z.infer<typeof signUpSchema>) => {};
 
   return (
     <div className="py-10 bg-muted min-h-[calc(100vh-64px)]">

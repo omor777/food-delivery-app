@@ -9,6 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      flexBasis: {
+        "1/7": "14.2857142857%",
+      },
+      container: {
+        center: true,
+        padding: "1rem",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
