@@ -66,7 +66,7 @@ const SignUp = () => {
   const onSubmit = async (formData: z.infer<typeof formSchema>) => {};
 
   return (
-    <div className="py-10">
+    <div className="py-10 bg-muted min-h-[calc(100vh-64px)]">
       <Card className="max-w-xl lg:max-w-3xl mx-auto">
         <CardHeader>
           <CardTitle>Sign Up</CardTitle>
@@ -85,7 +85,11 @@ const SignUp = () => {
                     <FormItem>
                       <FormLabel>Username</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your username" {...field} />
+                        <Input
+                          type="text"
+                          placeholder="Enter your username"
+                          {...field}
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -248,7 +252,7 @@ const SignUp = () => {
             Already have an account?{" "}
             <Link
               href="/sign-in"
-              className="underline hover:text-primary transition-colors"
+              className="underline hover:text-primary transition-colors font-medium"
             >
               Sign in
             </Link>
