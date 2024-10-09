@@ -3,6 +3,8 @@ import { Input } from "../ui/input";
 import { IoCartOutline } from "react-icons/io5";
 import { Button } from "../ui/button";
 import ProfileDropdown from "../profile-dropdown/ProfileDropdown";
+import { Search, ShoppingCart } from "lucide-react";
+import { Badge } from "../ui/badge";
 
 const navLinks = [
   {
@@ -49,14 +51,17 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="flex items-center gap-x-6">
-          <Input className="h-9" placeholder="Search" />
+          <div className="relative ">
+            <Search className="h-4 w-4 absolute top-3 left-3 text-muted-foreground" />
+            <Input placeholder="Search" className="pl-8" />
+          </div>
           <Link href="/cart">
-            <div className="border border-primary inline-block p-2 rounded-full text-primary relative">
-              <span className="absolute -top-1 right-0 bg-primary text-white size-4 p-2 rounded-full inline-flex items-center justify-center text-xs">
-                5
-              </span>
-              <IoCartOutline className="size-5" />
-            </div>
+            <Button variant="outline" size="icon" className="rounded-full relative">
+              <ShoppingCart className="w-4 h-4" />
+              <Badge className="size-[22px] rounded-full flex items-center justify-center absolute -top-2 text-xs shrink-0 -right-1">
+                7
+              </Badge>
+            </Button>
           </Link>
           {true ? (
             <Link href="/sign-up">
