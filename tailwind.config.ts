@@ -20,6 +20,7 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         "primary-text": "hsl(var(--primary-text))",
+        rating: "hsl(var(--rating))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

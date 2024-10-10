@@ -7,15 +7,14 @@ import { Button } from "../ui/button";
 import { Check, Heart, Plus } from "lucide-react";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
+import SectionHeading from "../section-heading/SectionHeading";
 
 const TrendingDisses = () => {
   const [s, setS] = useState(false);
   const [cart, setCart] = useState(false);
   return (
     <>
-      <h2 className="text-3xl font-bold text-primary-text mb-5">
-        Trending this week
-      </h2>
+      <SectionHeading>Trending this week</SectionHeading>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {[1, 2, 3].map((i) => (
           <Card key={i} className="overflow-hidden">
@@ -35,11 +34,11 @@ const TrendingDisses = () => {
             <CardContent className="mt-3">
               <div className="flex items-end justify-between">
                 <div className="grid gap-2">
-                  <ul className="flex items-center">
+                  <ul className="flex items-center gap-0.5">
                     {[1, 2, 3, 4, 5].map((s) => (
                       <li key={s}>
                         <FaStar
-                          className={`${s !== 5 ? "text-primary" : ""} size-6`}
+                          className={`${s !== 5 ? "text-rating" : ""} size-5`}
                         />
                       </li>
                     ))}
@@ -48,7 +47,7 @@ const TrendingDisses = () => {
                     Cheese burger
                   </h3>
                   <span className="text-3xl font-extrabold text-primary">
-                    $10.99
+                    Tk 160
                   </span>
                 </div>
                 <Button
