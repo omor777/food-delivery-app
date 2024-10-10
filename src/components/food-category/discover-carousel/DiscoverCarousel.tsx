@@ -12,8 +12,6 @@ import img2 from "/public/pro2.jpg";
 import img3 from "/public/pro3.jpg";
 import img4 from "/public/pro4.jpg";
 import Image from "next/image";
-import { useRef } from "react";
-import Autoplay from "embla-carousel-autoplay";
 
 const carousels = [
   {

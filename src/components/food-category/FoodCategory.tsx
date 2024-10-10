@@ -34,7 +34,7 @@ const foodCategories = [
 ];
 
 const FoodCategory = () => {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
   return (
     <div>
       <Carousel
