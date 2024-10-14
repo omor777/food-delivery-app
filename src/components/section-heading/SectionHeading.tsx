@@ -10,7 +10,7 @@ const SectionHeading = ({ children, className }: HeadingProps) => {
   return (
     <h2
       className={cn(
-        "scroll-m-20 pb-6 text-3xl font-semibold tracking-tight",
+        "scroll-m-20 pb-6 text-3xl font-semibold tracking-tight text-black/80",
         className
       )}
     >

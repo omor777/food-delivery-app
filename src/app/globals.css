@@ -62,3 +62,12 @@
     --chart-5: 340 75% 55%;
   }
 }
+@layer components {
+  .clb {
+    @apply -left-4 hidden sm:flex hover:bg-primary hover:text-white;
+  }
+
+  .crb {
+    @apply -right-4 hidden sm:flex hover:text-white hover:bg-primary;
+  }
+}

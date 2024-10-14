@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { FaStar } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import RestaurantBottomNav from "../components/RestuarantBottomNav";
+import RestaurantMainContent from "../components/RestaurantMainContent";
 
 const Restaurant = () => {
   return (
@@ -87,6 +88,7 @@ const Restaurant = () => {
           </div>
         </div>
         <RestaurantBottomNav />
+        <RestaurantMainContent />
       </div>
     </div>
   );
