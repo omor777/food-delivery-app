@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "restaurant-cover":
+          "url('/cover.jpg')",
+      },
       flexBasis: {
         "1/7": "14.2857142857%",
       },
